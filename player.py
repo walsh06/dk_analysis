@@ -5,8 +5,8 @@ class Player:
         parts = csv_string.split(",")
         name = parts[2]
         positions = parts[4].split("/")
-        salary = parts[5]
-        points = parts[8]
+        salary = float(parts[5])
+        points = float(parts[8])
         team = parts[7]
         id = parts[3]
         return cls(name, id, team, positions, salary, points)
